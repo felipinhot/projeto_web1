@@ -382,20 +382,29 @@ align-items: center;
 justify-content: center;
 }
 
-
-
-@media (max-width: 768px) {
-    section.conteudo .coluna {
+@media (max-width: 576px) {
+    .grid-Local {
+        grid-template-columns: 1fr;
+    }
+    
+    .produto {
         width: 100%;
     }
     
-    .contact-form {
-        margin-top: 20px;
+    .redes-sociais a {
+        font-size: 16px;
     }
-    p, .contato p {
-        max-width: 85vw; 
-    } 
+    
+    .footer p {
+        font-size: 14px;
+    }
+    
+    .banner_Pedido {
+        height: auto;
+        padding: 15px;
+    }
 }
+
 @media (max-width: 600px) {
     header nav a {
         font-size: 0.9rem; 
@@ -407,8 +416,16 @@ justify-content: center;
         width: 46%; 
         display: inline-block;
     }
+    section.conteudo .coluna {
+        width: 100%;
+    }
+    .contact-form {
+        margin-top: 20px;
+    }
+    p, .contato p {
+        max-width: 85vw; 
+    } 
 }
-
 .footer {
     text-align: center;
     background-color: #000000;
